@@ -24,5 +24,13 @@ pipeline {
             }
         }   
     }
+       stage('Build Docker Image') {
+steps {
+}
+}
+stage('Push Docker Image to Docker Hub') {
+steps {
+}
+}
 }
 }
