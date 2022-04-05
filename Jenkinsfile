@@ -9,7 +9,8 @@ pipeline {
         }
             stage('Package') {
             steps {
-                bat 'mvn clean package'
+                bat 'mvn clean package' //This is for windows
+                //sh mvn clean package this is for linux
             }
             }
             stage('JaCoCo Report') {
